@@ -23,9 +23,9 @@ namespace Task1
             string name;
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine($"Введите код {i+1} товара");
                 do
                 {
+                    Console.WriteLine($"Введите код {i + 1} товара");
                     beCode = int.TryParse(Console.ReadLine(), out code);
                     if (!beCode)
                     {
@@ -34,9 +34,9 @@ namespace Task1
                 } while (!beCode);
                 Console.WriteLine($"Введите наименование {i + 1} товара");
                 name = Console.ReadLine();
-                Console.WriteLine($"Введите цену {i + 1} товара");
-                do
+                                do
                 {
+                    Console.WriteLine($"Введите цену {i + 1} товара");
                     bePrice = double.TryParse(Console.ReadLine(), out price);
                     if (!bePrice)
                     {
