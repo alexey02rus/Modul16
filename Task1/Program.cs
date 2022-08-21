@@ -34,7 +34,7 @@ namespace Task1
                 } while (!beCode);
                 Console.WriteLine($"Введите наименование {i + 1} товара");
                 name = Console.ReadLine();
-                                do
+                do
                 {
                     Console.WriteLine($"Введите цену {i + 1} товара");
                     bePrice = double.TryParse(Console.ReadLine(), out price);
